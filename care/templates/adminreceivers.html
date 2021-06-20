@@ -1,0 +1,58 @@
+{% include 'adminnav.html' %}
+<head>
+<title>Receiver Details</title>
+<link rel="shortcut icon" href="/static/favicon.ico" />
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+</head>
+<div class="content">
+    <h1>Reciever Details</h1>
+    <table>
+        <tr>
+            <th>Name &nbsp; <span class="glyphicon glyphicon-user"></span></th>
+            <th>Email &nbsp; <span class="glyphicon glyphicon-envelope"></span></th>
+            <th>Contact No. &nbsp;<span class="glyphicon glyphicon-earphone"></span></th>
+            <th>Whatsapp No. &nbsp;<span class="glyphicon glyphicon-earphone"></span></th>
+            <th>Address &nbsp;<span class=" glyphicon glyphicon-map-marker"></span></th>
+            <th>Type of donation required &nbsp;<span class=" glyphicon glyphicon-inbox"></span></th>
+
+        </tr>
+            {% if receiver %}
+                {% for r in receiver %}
+                <tr>
+                    <td>{{r.name}}</td>
+                    <td>{{r.email}}</td>
+                    <td>{{r.phone}}</td>
+                    <td>{{r.whatsappphone}}</td>
+                    <td>{{r.street}}&nbsp;{{r.city}}&nbsp;{{r.state}}&nbsp;{{r.zip}}</td>
+                    <td>{{r.tdr}}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+            {% endif %}
+    </table>
+</div>

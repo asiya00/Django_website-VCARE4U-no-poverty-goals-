@@ -1,0 +1,286 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<section class="header-extradiv">
+  <div class="container">
+    <div class="row">
+      <div class="extra-div col-lg-6 col-md-6 col-12" style = "background: linear-gradient(to bottom left, #ffffff 36%, #ccffff 100%);">
+        <a href="#"><i class="fas fa-2x fa-user"></i></a>
+        <h2>CUSTOMER</h2>
+        <a href="{% url 'dashboard' %}"><button class="login-btn" id="button" type="button" style = "background-color:#50d1c0;">REGISTER</button></a>
+      </div>
+
+      <div class="extra-div col-lg-6 col-md-6 col-12" style = "background: linear-gradient(to bottom left, #ffffff 36%, #ccffff 100%);">
+        <a href="#"><i class="fas fa-2x fa-user"></i></a>
+        <h2>DONOR</h2>
+        <a href="{% url 'login_url' %}"><button class="login-btn" style = "background-color:#50d1c0;">LOGIN/REGISTER</button></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="services" class="bg-silver-light">
+  <div class="container serv">
+    <div class="section-title text-center">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-1 ">
+          <h2 class="text-uppercase mt-0 line-height-1" style="color:white;">What We Are Doing?</h2>
+          <div class="title-icon">
+            <i class="fas fa-3x fa-hand-holding-heart"></i>
+          </div>
+          <p style="color:white;">We are providing help to the needy by providing them what they need</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+          <div class="text-center box-shadow11 mb-30  p-30 cards">
+            <a href="#" class="">
+              <i class="fas  fa-3x fa-hands-usd"></i>
+            </a>
+            <h4 class="font-weight-600 mt-20"style="color:white;">Donation orphan child</h4>
+            <p style="color:white;">All children deserve an education, nutrition, health, and protection—no matter where they live. We work
+              with orphanages in India to reunite children with their families and to provide each child with the
+              quality of care and dignity that is their right.</p>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+          <div class="text-center box-shadow11 mb-30  p-30 cards">
+            <a href="#" class="">
+              <i class="fas fa-3x fa-handshake"></i>
+            </a>
+            <h4 class="font-weight-600 mt-20" style="color:white;">Help The Helpless</h4>
+            <p style="color:white;">“No one is useless in this world who lightens the burdens of another.” “There is no exercise better for
+              the heart than reaching down and lifting people up.” “When we give cheerfully and accept gratefully,
+              everyone is blessed.” “You have not lived today until you have done something for someone who can never
+              repay you.”</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+          <div class="text-center box-shadow11 mb-sm-30  p-30 cards">
+            <a href="#" class="">
+              <i class="fas  fa-3x fa-globe"></i>
+            </a>
+            <h4 class="font-weight-600 mt-20" style="color:white;">Donation for poor</h4>
+            <p style="color:white;">Today, 690 million people around the world will go to bed on an empty stomach. But your gift means that
+              one less child will be at risk of starvation tonight.Whether you decide to make a one-off donation or set
+              up a monthly gift, you can change a life forever today. Often, one meal at the right time will be enough
+              to make a difference between life and death.</p>
+          <br>
+          <br>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+          <div class="text-center box-shadow11 mb-sm-30  p-30 cards">
+            <a href="#" class="">
+              <i class="fas fa-3x fa-child"></i>
+            </a>
+            <h4 class="font-weight-600 mt-20" style="color:white;">Save The children</h4>
+            <p style="color:white;">Home to some of the most ancient surviving civilizations, today’s India is the world’s largest democracy
+              and a rising economic powerhouse. But it is tackling major social, economic and environmental issues,
+              including a huge gap between the wealthy and those living in poverty.While there is more wealth in India
+              than ever before, and significant progress has been made, it hasn’t fully translated into health care and
+              nutrition, education or better protection for all, especially India’s most marginalized and deprived
+              children.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ****offer section Ends**** -->
+
+{% comment %} ****project done start****** {% endcomment %}
+<section class="project-work">
+  <div class="container heading text-center">
+    <h1 class="text-center font-weight-bold">Poverty in India: from the village to the slum</h1>
+    <p>Two-thirds of people in India live in poverty: 68.8% of the Indian population lives on less than $2 a day. Over
+      30% even have less than $1.25 per day available - they are considered extremely poor. This makes the Indian
+      subcontinent one of the poorest countries in the world; women and children, the weakest members of Indian society,
+      suffer most.</p>
+  </div>
+</section>
+{% comment %} ****project done Ends****** {% endcomment %}
+
+{% comment %} *****project done start*** {% endcomment %}
+
+{% comment %} *****Our Pricing Ends*** {% endcomment %}
+<!-- ******Our Happy Clients start***** -->
+<section class="happyclients" id="happyclientsdiv">
+  <div class="container heading text-center">
+    <h1 class="text-center font-weight-bold ">OUR TEAM</h1>
+    <p class="text-capitalize pt-2"></p>
+  </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+
+
+    <!-- The slideshow -->
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="/static/shruti.png" class="img-fluid img-thumbnail" alt=""></a>
+              <p class="m-4">Python and Bootstrap Enthusiast with an abundance of creative thinking and loves the way ideas turn lively through code.</p>
+              <br>
+              <h1>SHRUTI NAIR</h1>
+              <h2>Frontend/Backend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/shruti-nair-ba2824180/">&#127760;Connect</a></button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="/static/asiya.png" class="img-fluid img-thumbnail" alt=""></a>
+              <p class="m-4">Problem Solver with the Capability of Analyzing,designing and planning technological implementations of code.</p>
+              <br>
+              <h1>ASIYA PATHAN</h1>
+              <h2>Frontend/Backend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/asiya-pathan-8aaab8193/">&#127760;Connect</a></button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="/static/ahmed.png" class="img-fluid img-thumbnail" alt=""></a>
+              <p class="m-4">I love the logic and structure of coding & always strive to write elegant & efficient code whether it be HTML, CSS or JQuery</p>
+              <br>
+              <h1>AHMED MANIKWARE</h1>
+              <h2>Frontend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/ahmed-manikware-85481b180/">&#127760;Connect</a></button>
+            </div>
+          </div>
+
+           <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="/static/zarin.png" class="img-fluid img-thumbnail" alt=""></a>
+              <p class="m-4">Passionate and a keen learner. Love to enhance my knowledge, explore, experience and learn new technology aspects.</p>
+              <br>
+              <h1>ZARIN KHAN</h1>
+              <h2>Frontend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/zarin-khan-178360196/">&#127760;Connect</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- ******Our Happy Clients Ends***** -->
+<!-- ******Contact Us Start***** -->
+<section class="contactus" id="contactid">
+  <div class="container heading text-center">
+    <h1 class="text-center font-weight-bold ">CONTACT US</h1>
+    <p class="text-capitalize pt-1">We're Here To Help And Answer Any Question You Might Have. We Look Forward To
+      Hearing From You 😊</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+        <form method="post" action="" class="contact-form">
+          {% csrf_token %}
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Your name" id="username" required
+              autocomplete="off" name="name">
+          </div>
+
+          <br>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter Email" id="email" required autocomplete="off"
+              name="email">
+          </div>
+          <br>
+          <div class="form-group">
+            <textarea class="form-control" rows="4" id="comment" placeholder="Enter Your Comment"
+              name="comment"></textarea>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center form-button">
+            <button type="submit" class="btn btn-primary" style = "background-color:white;">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ****** Contace Us Ends***** -->
+<!-- ****** newsletter start***** -->
+
+
+<!-- ****** newsletter Ends***** -->
+
+<!-- ****** Footer Start***** -->
+
+<footer class="footer-section" id="footerdiv">
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="text-center">
+        <p>Copyright ©2019 All rights reserved|This Website is made with love by Vcare4u Team</p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Login start -->
+
+<!-- ****** Footer Ends***** -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+  integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  myButton = document.getElementById("myBtn");
+
+//when the user scroll down 20px from the top of the document , show the buttton
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+//When the user click on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;//for Safari
+  document.documentElement.scrollTop = 0;//For chrome ,firefox, IE and opera
+}
+
+</script>
+</body>
+
+</html>
+{% endblock body %}

@@ -1,0 +1,200 @@
+Age_Group,Gender,Workclass,Education_Level,marital_status,Average_hours_per_week_worked,Income,eligible
+25-40,Female,Handlers-cleaners,SSC,Married,3 to 6,below 1 lakh,Yes
+20-25,Male,Sales,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+40-60,Male,Daily-wager,Pre-school,Married,6 to 9,below 1 lakh,Yes
+60+,Male,Others,Pre-school,Married,3 to 6,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Female,Tech-support,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Male,Transport-moving,HSC,Married,9 to 12,below 1 lakh,Yes
+20-25,Female,Priv-house-service,SSC,Married,6 to 9,below 1 lakh,Yes
+25-40,Female,Priv-house-service,Uneducated,Married,6 to 9,below 1 lakh,Yes
+40-60,Female,Others,Bachelors,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Female,Others,Masters,Married,6 to 9,above 2 lakhs,No
+20-25,Male,Tech-support,Bachelors,Unmarried,9 to 12,1-2 lakhs,No
+40-60,Male,Exec-managerial,Masters,Married,6 to 9,1-2 lakhs,No
+60+,Male,Armed forces,Diploma,Married,0 to 3,below 1 lakh,Yes
+25-40,Male,Craft-repair,Pre-school,Unmarried,6 to 9,below 1 lakh,Yes
+20-25,Female,Handlers-cleaners,Pre-school,Unmarried,3 to 6,below 1 lakh,Yes
+25-40,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+20-25,Female,Daily-wager,Pre-school,Married,6 to 9,below 1 lakh,Yes
+25-40,Female,Others,HSC,Married,3 to 6,below 1 lakh,Yes
+40-60,Female,Others,SSC,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Female,Tech-support,Diploma,Married,6 to 9,1-2 lakhs,No
+20-25,Male,Transport-moving,Bachelors,Unmarried,9 to 12,1-2 lakhs,No
+40-60,Male,Priv-house-service,HSC,Married,6 to 9,below 1 lakh,Yes
+60+,Female,Priv-house-service,Pre-school,Married,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,SSC,Unmarried,6 to 9,above 2 lakhs,No
+20-25,Male,Others,Diploma,Unmarried,3 to 6,above 2 lakhs,No
+25-40,Male,Tech-support,Pre-school,Married,6 to 9,1-2 lakhs,No
+20-25,Male,Exec-managerial,Pre-school,Married,6 to 9,1-2 lakhs,No
+25-40,Female,Armed forces,Bachelors,Married,9 to 12,below 1 lakh,Yes
+40-60,Male,Craft-repair,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Female,Handlers-cleaners,HSC,Married,6 to 9,below 1 lakh,Yes
+20-25,Male,Sales,SSC,Unmarried,9 to 12,1-2 lakhs,No
+40-60,Male,Daily-wager,Uneducated,Married,6 to 9,below 1 lakh,Yes
+60+,Female,Others,SSC,Married,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Masters,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Male,Tech-support,Bachelors,Unmarried,3 to 6,1-2 lakhs,No
+25-40,Male,Transport-moving,SSC,Married,6 to 9,1-2 lakhs,No
+20-25,Male,Priv-house-service,Diploma,Married,6 to 9,below 1 lakh,Yes
+25-40,Female,Priv-house-service,Pre-school,Married,3 to 6,below 1 lakh,Yes
+40-60,Male,Others,Pre-school,Unmarried,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Married,6 to 9,above 2 lakhs,No
+20-25,Female,Tech-support,Bachelors,Unmarried,9 to 12,1-2 lakhs,No
+40-60,Male,Exec-managerial,HSC,Married,6 to 9,1-2 lakhs,No
+60+,Male,Armed forces,SSC,Married,0 to 3,below 1 lakh,Yes
+25-40,Male,Craft-repair,Uneducated,Unmarried,6 to 9,below 1 lakh,Yes
+20-25,Male,Handlers-cleaners,Bachelors,Unmarried,3 to 6,below 1 lakh,Yes
+25-40,Female,Sales,Masters,Married,3 to 6,1-2 lakhs,No
+40-60,Male,Daily-wager,Bachelors,Married,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,SSC,Married,3 to 6,1-2 lakhs,No
+25-40,Female,Tech-support,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+40-60,Female,Others,Uneducated,Divorced,6 to 9,below 1 lakh,Yes
+20-25,Male,Sales,Bachelors,Unmarried,9 to 12,1-2 lakhs,No
+25-40,Female,Handlers-cleaners,HSC,Married,9 to 12,below 1 lakh,Yes
+25-40,Transgender,Others,Uneducated,Unmarried,0 to 3,below 1 lakh,Yes
+25-40,Male,Tech-support,Phd,Married,6 to 9,1-2 lakhs,No
+60+,Male,Transport-moving,Diploma,Married,9 to 12,above 2 lakhs,No
+40-60,Female,Armed forces,Bachelors,Married,9 to 12,above 2 lakhs,No
+20-25,Male,Tech-support,HSC,Unmarried,6 to 9,1-2 lakhs,No
+40-60,Female,Daily-wager,Diploma,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Craft-repair,SSC,Unmarried,3 to 6,below 1 lakh,Yes
+60+,Male,Others,SSC,Married,0 to 3,below 1 lakh,Yes
+40-60,Male,Exec-managerial,Masters,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Male,Prof-specialty,Phd,Unmarried,9 to 12,1-2 lakhs,No
+20-25,Male,Tech-support,Bachelors,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Male,Sales,Masters,Unmarried,9 to 12,1-2 lakhs,No
+40-60,Male,Daily-wager,HSC,Married,9 to 12,1-2 lakhs,No
+40-60,Male,Priv-house-service,Diploma,Married,9 to 12,1-2 lakhs,No
+60+,Male,Others,Uneducated,Married,0 to 3,below 1 lakh,Yes
+25-40,Female,Daily-wager,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+40-60,Female,Others,Uneducated,Divorced,3 to 6,below 1 lakh,Yes
+25-40,Female,Prof-specialty,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Female,Craft-repair,Diploma,Divorced,9 to 12,1-2 lakhs,No
+40-60,Female,Handlers-cleaners,Pre-school,Married,9 to 12,below 1 lakh,Yes
+25-40,Male,Armed forces,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Male,Tech-support,HSC,Married,9 to 12,below 1 lakh,Yes
+40-60,Female,Exec-managerial,Diploma,Unmarried,3 to 6,below 1 lakh,Yes
+25-40,Female,Handlers-cleaners,Pre-school,Married,6 to 9,below 1 lakh,Yes
+40-60,Female,Craft-repair,Diploma,Unmarried,9 to 12,1-2 lakhs,No
+20-25,Male,Tech-support,Masters,Unmarried,3 to 6,above 2 lakhs,No
+40-60,Male,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+20-25,Male,Exec-managerial,Phd,Unmarried,9 to 12,above 2 lakhs,No
+40-60,Male,Transport-moving,Bachelors,Married,12 to 16,above 2 lakhs,No
+25-40,Male,Armed forces,Phd,Unmarried,12 to 16,1-2 lakhs,No
+20-25,Male,Daily-wager,HSC,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Female,Craft-repair,HSC,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Female,Prof-specialty,Phd,Married,9 to 12,1-2 lakhs,No
+40-60,Female,Handlers-cleaners,Pre-school,Married,6 to 9,below 1 lakh,Yes
+25-40,Female,Priv-house-service,Diploma,Unmarried,6 to 9,above 2 lakhs,No
+20-25,Male,Others,SSC,Unmarried,3 to 6,above 2 lakhs,Yes
+20-25,Male,Sales,Bachelors,Unmarried,6 to 9,above 2 lakhs,No
+20-25,Male,Others,Diploma,Unmarried,3 to 6,1-2 lakhs,No
+20-25,Male,Craft-repair,HSC,Unmarried,9 to 12,below 1 lakh,Yes
+20-25,Male,Others,Bachelors,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Male,Tech-support,Masters,Unmarried,6 to 9,above 2 lakhs,No
+40-60,Male,Transport-moving,HSC,Married,9 to 12,1-2 lakhs,No
+20-25,Female,Handlers-cleaners,Pre-school,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Female,Prof-specialty,Masters,Unmarried,12 to 16,1-2 lakhs,No
+60+,Male,Others,Phd,Married,3 to 6,1-2 lakhs,No
+60+,Male,Others,Phd,Married,6 to 9,above 2 lakhs,No
+40-60,Male,Sales,Diploma,Divorced,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Diploma,Unmarried,9 to 12,1-2 lakhs,No
+25-40,Male,Craft-repair,Bachelors,Unmarried,6 to 9,below 1 lakh,Yes
+20-25,Male,Transport-moving,HSC,Unmarried,6 to 9,below 1 lakh,Yes
+25-40,Male,Transport-moving,HSC,Married,9 to 12,below 1 lakh,Yes
+25-40,Female,Tech-support,Masters,Divorced,6 to 9,above 2 lakhs,No
+40-60,Female,Exec-managerial,Bachelors,Married,3 to 6,above 2 lakhs,No
+25-40,Female,Prof-specialty,Phd,Married,6 to 9,above 2 lakhs,No
+20-25,Female,Sales,Bachelors,Unmarried,9 to 12,1-2 lakhs,No
+20-25,Female,Others,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Female,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Female,Prof-specialty,Phd,Unmarried,9 to 12,above 2 lakhs,No
+25-40,Male,Daily-wager,Pre-school,Married,9 to 12,below 1 lakh,Yes
+25-40,Male,Handlers-cleaners,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+20-25,Male,Tech-support,Bachelors,Unmarried,6 to 9,above 2 lakhs,No
+20-25,Male,Others,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Male,Others,Masters,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Male,Armed forces,Masters,Married,9 to 12,above 2 lakhs,No
+20-25,Male,Transport-moving,Diploma,Unmarried,9 to 12,1-2 lakhs,No
+25-40,Male,Craft-repair,Bachelors,Married,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Masters,Married,6 to 9,above 2 lakhs,No
+25-40,Male,Sales,Diploma,Married,6 to 9,1-2 lakhs,No
+40-60,Male,Daily-wager,Diploma,Divorced,9 to 12,below 1 lakh,Yes
+25-40,Male,Tech-support,Masters,Married,6 to 9,above 2 lakhs,No
+40-60,Female,Others,HSC,Married,6 to 9,below 1 lakh,Yes
+25-40,Transgender,Others,Diploma,Unmarried,6 to 9,1-2 lakhs,No
+40-60,Female,Others,HSC,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Diploma,Unmarried,6 to 9,below 1 lakh,Yes
+40-60,Male,Craft-repair,HSC,Married,6 to 9,1-2 lakhs,No
+20-25,Male,Sales,Diploma,Unmarried,6 to 9,below 1 lakh,Yes
+20-25,Male,Transport-moving,HSC,Unmarried,9 to 12,below 1 lakh,Yes
+20-25,Male,Tech-support,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Male,Daily-wager,HSC,Unmarried,9 to 12,below 1 lakh,Yes
+20-25,Male,Sales,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+20-25,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Transgender,Handlers-cleaners,HSC,Divorced,9 to 12,below 1 lakh,Yes
+40-60,Male,Others,HSC,Married,6 to 9,above 2 lakhs,No
+20-25,Male,Daily-wager,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+60+,Male,Others,Bachelors,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Prof-specialty,Masters,Married,6 to 9,above 2 lakhs,No
+25-40,Female,Sales,Bachelors,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Diploma,Unmarried,3 to 6,above 2 lakhs,No
+25-40,Male,Others,Bachelors,Married,3 to 6,above 2 lakhs,No
+40-60,Male,Others,HSC,Married,3 to 6,above 2 lakhs,No
+40-60,Male,Priv-house-service,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Tech-support,Bachelors,Married,6 to 9,above 2 lakhs,No
+40-60,Male,Sales,HSC,Divorced,9 to 12,above 2 lakhs,No
+20-25,Male,Prof-specialty,Phd,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Transgender,Daily-wager,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Male,Sales,HSC,Divorced,9 to 12,below 1 lakh,Yes
+25-40,Female,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Masters,Unmarried,9 to 12,above 2 lakhs,No
+25-40,Male,Sales,Bachelors,Married,6 to 9,above 2 lakhs,No
+25-40,Male,Daily-wager,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Handlers-cleaners,HSC,Divorced,9 to 12,below 1 lakh,Yes
+25-40,Male,Tech-support,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Tech-support,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Daily-wager,SSC,Married,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Married,6 to 9,above 2 lakhs,No
+25-40,Male,Armed forces,Bachelors,Married,9 to 12,above 2 lakhs,No
+25-40,Transgender,Others,SSC,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Female,Priv-house-service,Bachelors,Married,3 to 6,1-2 lakhs,No
+25-40,Male,Transport-moving,SSC,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+40-60,Male,Daily-wager,Pre-school,Unmarried,6 to 9,below 1 lakh,Yes
+40-60,Male,Others,HSC,Married,0 to 3,above 2 lakhs,No
+25-40,Female,Prof-specialty,Masters,Married,6 to 9,above 2 lakhs,No
+20-25,Female,Exec-managerial,Masters,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Male,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+40-60,Male,Prof-specialty,Masters,Married,6 to 9,above 2 lakhs,No
+40-60,Male,Transport-moving,HSC,Married,9 to 12,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+40-60,Transgender,Others,Diploma,Divorced,6 to 9,below 1 lakh,Yes
+40-60,Female,Daily-wager,Pre-school,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+40-60,Male,Exec-managerial,Masters,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Transport-moving,HSC,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Transgender,Sales,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Male,Craft-repair,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Daily-wager,Diploma,Unmarried,9 to 12,below 1 lakh,Yes
+25-40,Male,Others,Bachelors,Married,6 to 9,above 2 lakhs,No
+25-40,Male,Transport-moving,HSC,Divorced,9 to 12,below 1 lakh,Yes
+25-40,Male,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Female,Others,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Sales,Diploma,Married,6 to 9,below 1 lakh,Yes
+25-40,Female,Tech-support,Masters,Unmarried,6 to 9,above 2 lakhs,No
+25-40,Male,Others,HSC,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Transport-moving,HSC,Married,9 to 12,below 1 lakh,Yes
+40-60,Male,Sales,HSC,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Handlers-cleaners,Bachelors,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Male,Others,HSC,Unmarried,6 to 9,1-2 lakhs,No
+25-40,Male,Sales,Bachelors,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Transport-moving,Bachelors,Divorced,6 to 9,below 1 lakh,Yes
+25-40,Male,Others,Diploma,Married,6 to 9,1-2 lakhs,No
+25-40,Male,Exec-managerial,Masters,Married,6 to 9,1-2 lakhs,No

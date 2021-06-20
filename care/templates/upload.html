@@ -1,0 +1,213 @@
+{% include 'nav.html' %}
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="shortcut icon" href="/static/favicon.ico" />
+<script>
+  $(document).ready(function()
+  {
+    $('.chkc').click(function(){
+      var txt = "";
+      $('.chkc:checked').each(function()
+      {
+        txt += $(this).val()+","
+      });
+      txt = txt.substring(0,txt.length-1);
+      $('#txtvalues').val(txt);
+    });
+  });
+</script>
+<title>Details</title>
+<style>
+    .adjust {
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    .submit{
+        color:white;
+        background-color:#2F66ED;
+        height: 50px;
+        width:120px;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+</head>
+<div class="content">
+<h1>Details</h1>
+{% include 'messages.html' %}
+
+{% block content %} {% endblock content %}
+    <form action="/upload" method="POST">
+    {% csrf_token %}
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="border-top-0">
+                            <h3>#</h3>
+                        </th>
+                        <th class="border-top-0">
+                            <h3>Info</h3>
+                        </th>
+                        <th class="border-top-0">
+                            <h3>Fill/Select</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="adjust">1</td>
+                        <td><label class="adjust">Full Name</label></td>
+                        <td><input type="text" width="120px" class="adjust" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td class="adjust">2</td>
+                        <td><label class="adjust">Email</label></td>
+                        <td><input type="email" width="120px" class="adjust" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td class="adjust">3</td>
+                        <td><label class="adjust">Phone</label></td>
+                        <td><input type="phone" width="120px" class="adjust" name="phone1" required></td>
+                    </tr>
+                    <tr>
+                        <td class="adjust">4</td>
+                        <td><label class="adjust">WhatsApp Number</label></td>
+                        <td><input type="phone" width="120px" class="adjust" name="phone2" required></td>
+                    </tr>
+                    <tr>
+                        <td class="adjust">5</td>
+                        <td><label class="adjust">Address</label></td>
+                        <td><input type="text" width="120px" class="adjust" name="street" required placeholder="Street">&nbsp
+                        <input type="text" width="120px" class="adjust" name="city" required placeholder="City"><br><br>
+                        <input type="text" width="120px" class="adjust" name="state" required placeholder="State">&nbsp
+                        <input type="text" width="120px" class="adjust" name="zip" required placeholder="Pincode"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><label class="adjust">Age Group</label></td>
+                        <td><select class="adjust" name="age" required>
+                                <option>Select Value</option>
+                                <option>20-25</option>
+                                <option>25-40</option>
+                                <option>40-60</option>
+                                <option>60+</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><label class="adjust">Gender</label></td>
+                        <td><select class="adjust" name="gender" required>
+                                <option>Select Value</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Transgender</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><label class="adjust">Workclass</label></td>
+                        <td><select class="adjust" name="workclass" required>
+                                <option>Select Value</option>
+                                <option>Tech-support</option>
+                                <option>Craft-repair</option>
+                                <option>Others</option>
+                                <option>Daily-wager</option>
+                                <option>Sales</option>
+                                <option>Exec-managerial</option>
+                                <option>Prof-specialty</option>
+                                <option>Handlers-cleaners</option>
+                                <option>Transport-moving</option>
+                                <option>Priv-house-service</option>
+                                <option>Armed forces</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><label class="adjust">Education-Level</label></td>
+                        <td><select class="adjust" name="education" required>
+                                <option>Select Value</option>
+                                <option>Phd</option>
+                                <option>Masters</option>
+                                <option>Bachelors</option>
+                                <option>Diploma</option>
+                                <option>HSC</option>
+                                <option>SSC</option>
+                                <option>Pre-school</option>
+                                <option>Uneducated</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><label class="adjust">Marital-Status</label></td>
+                        <td><select class="adjust" name="maritalstatus" required>
+                                <option>Select Value</option>
+                                <option>Married</option>
+                                <option>Unmarried</option>
+                                <option>Divorced</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><label class="adjust">Average-hours-per-week-worked</label></td>
+                        <td><select class="adjust" name="hoursofwork" required>
+                                <option>Select Value</option>
+                                <option>0 to 3</option>
+                                <option>3 to 6</option>
+                                <option>6 to 9</option>
+                                <option>9 to 12</option>
+                                <option>12 to 16</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><label class="adjust">Income</label></td>
+                        <td><select class="adjust" name="income" required>
+                                <option>Select Value</option>
+                                <option>below 1 lakh</option>
+                                <option>1-2 lakhs</option>
+                                <option>above 2 lakhs</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><label class="adjust">Income Certificate</label></td>
+                        <td><input type="file" name="incomefile">png/jpeg</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td><label class="adjust">Type of donation required</label></td>
+                        <td><input type="checkbox" class="chkc" value="Food Supply"> Food Supply
+                          &nbsp; &nbsp;<input type="checkbox" class="chkc" value="Educational Sponsors"> Educational Sponsors
+                          &nbsp; &nbsp;<input type="checkbox" class="chkc" value="Financial Support"> Financial Support &nbsp;
+                          <input type="text" name="tdr" id="txtvalues" style="border:None; width:400px;">
+                          </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="submit">
+            <a href="{% url 'dashboard' %}"><button type="button" name="button" class="submit">Cancel</button></a>
+        </div>
+    </form>
+</div>

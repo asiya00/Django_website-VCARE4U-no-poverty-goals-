@@ -1,0 +1,60 @@
+{% include 'adminnav.html' %}
+<head>
+<title>Donor Details</title>
+<link rel="shortcut icon" href="/static/favicon.ico" />
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+</head>
+<div class="content">
+    <h1>Donor Details</h1>
+    {{c.username}}
+    {{c.password}}
+    <table>
+        <tr>
+            <th>Name &nbsp; <span class="glyphicon glyphicon-user"></span></th>
+            <th>Email &nbsp; <span class="glyphicon glyphicon-envelope"></span></th>
+            <th>Contact No. &nbsp;<span class="glyphicon glyphicon-earphone"></span></th>
+            <th>Whatsapp No. &nbsp;<span class="glyphicon glyphicon-earphone"></span></th>
+            <th>Address &nbsp;<span class=" glyphicon glyphicon-map-marker"></span></th>
+            <th>Scheme you are interested to Donate in &nbsp;<span class=" glyphicon glyphicon-inbox"></span></th>
+
+        </tr>
+            {% if donor %}
+                {% for r in donor %}
+                <tr>
+                    <td>{{r.name}}</td>
+                    <td>{{r.email}}</td>
+                    <td>{{r.phone}}</td>
+                    <td>{{r.whatsappphone}}</td>
+                    <td>{{r.street}}&nbsp;{{r.city}}&nbsp;{{r.state}}&nbsp;{{r.zip}}</td>
+                    <td>{{r.idi}}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+            {% endif %}
+    </table>
+</div>

@@ -1,0 +1,182 @@
+{% include 'donornav.html' %}
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="shortcut icon" href="/static/favicon.ico" />
+<script>
+  $(document).ready(function()
+  {
+    $('.chkc').click(function(){
+      var txt = "";
+      $('.chkc:checked').each(function()
+      {
+        txt += $(this).val()+","
+      });
+      txt = txt.substring(0,txt.length-1);
+      $('#txtvalues').val(txt);
+    });
+  });
+</script>
+<title>Profile</title>
+<style>
+    form{
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    .submit{
+        color:white;
+        background-color:#2F66ED;
+        height: 50px;
+        width:150px;
+    }
+    .cancel{
+        color:white;
+        background-color:#2F66ED;
+        height: 50px;
+        width:120px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 75%;
+    }
+
+    td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+</head>
+<div class="content">
+<h1>Profile</h1>
+<br>
+<br>
+    <form action="/donorprofile" method= "POST">{% csrf_token %}
+    {% if a %}
+    <div class="table-responsive">
+    <table>
+      <tbody>
+            <tr>
+              <td><label>Name</label></td>
+              <td><input type="text" name="name" style="width:300px" value="{{a.name}}" required></td>
+            </tr>
+            <tr>
+              <td><label>Email</label></td>
+              <td><input type="email" name="email" style="width:300px" value="{{a.email}}" required></td>
+            </tr>
+            <tr>
+              <td><label>Phone</label></td>
+              <td><input type="phone" name="phone1" style="width:300px" value="{{a.phone}}" required></td>
+            </tr>
+            <tr>
+              <td><label>Whatsapp Contact</label></td>
+              <td><input type="phone" name="phone2" style="width:300px" value="{{a.whatsappphone}}" required></td>
+            </tr>
+        </tbody>
+      </table>
+
+          <h4>Address:</h4>
+          <table>
+            <tbody>
+            <tr>
+              <td><label>Street</label></td>
+              <td><input type="text" name="street" style="width:300px" value="{{a.street}}" required></td>
+            </tr>
+            <tr>
+              <td><label>City</label></td>
+              <td><input type="text" name="city" style="width:300px" value="{{a.city}}" required></td>
+            </tr>
+            <tr>
+              <td><label>State</label></td>
+              <td><input type="text" name="state" style="width:300px" value="{{a.state}}" required></td>
+            </tr>
+            <tr>
+              <td><label>Pincode</label></td>
+              <td><input type="text" name="zip" style="width:300px" value="{{a.zip}}" required></td>
+            </tr>
+          <tr>
+            <td><label>Scheme you are interested to Donate in</label></td>
+            <td><input type="checkbox" class="chkc" value="Food Supply"> Food Supply
+              &nbsp;&nbsp<input type="checkbox" class="chkc" value="Educational Sponsors"> Educational Sponsors
+              &nbsp;&nbsp<input type="checkbox" class="chkc" value="Financial Support"> Financial Support &nbsp
+              <br>
+              <br>
+              <input type="text" name="idi" id="txtvalues" placeholder="{{a.idi}}" style="border:None; width:400px;">
+              </td>
+          </tr>
+      </tbody>
+      </table>
+      {% else %}
+      <div class="table-responsive">
+      <table>
+        <tbody>
+              <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="name" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>Phone</label></td>
+                <td><input type="phone" name="phone1" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>Whatsapp Contact</label></td>
+                <td><input type="phone" name="phone2" style="width:300px" required></td>
+              </tr>
+          </tbody>
+        </table>
+
+            <h4>Address:</h4>
+            <table>
+              <tbody>
+              <tr>
+                <td><label>Street</label></td>
+                <td><input type="text" name="street" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>City</label></td>
+                <td><input type="text" name="city" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>State</label></td>
+                <td><input type="text" name="state" style="width:300px" required></td>
+              </tr>
+              <tr>
+                <td><label>Pincode</label></td>
+                <td><input type="text" name="zip" style="width:300px" required></td>
+              </tr>
+            <tr>
+              <td><label>Scheme you are interested to Donate in</label></td>
+              <td><input type="checkbox" class="chkc" value="Food Supply"> Food Supply
+                &nbsp;&nbsp<input type="checkbox" class="chkc" value="Educational Sponsors"> Educational Sponsors
+                &nbsp;&nbsp<input type="checkbox" class="chkc" value="Financial Support"> Financial Support
+                <br>
+                <br>
+                <input type="text" name="idi" id="txtvalues" style="border:None; width:400px;">
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      {% endif %}
+      {% include 'messages.html' %}
+
+      {% block content %} {% endblock content %}
+    <br><br>
+    <input type="submit" class="submit" value="Submit/Update">
+    <a href="{% url 'donordashboard' %}"><button type="button" name="button" class="cancel">Cancel</button></a>
+    </form>
+</div>

@@ -1,0 +1,115 @@
+{% include 'donornav.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #2F66ED;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<br><br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h1>Blood Donation</h1>
+                <p class="title">Inter State</p>
+                <p><button><a href="http://nbtc.naco.gov.in/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h1>Organ Donation </h1>
+                <p class="title">National</p>
+                <p><button><a href="https://www.nhp.gov.in/organ-donation-day_pg#:~:text=Organ%20Donation%20is%20donating%20a,in%20need%20of%20an%20organ."><label style="color: aliceblue;">View Scheme</label></a></button></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h1>Milaap Free Crowdfunding for India</h1>
+                <p class="title">All over India</p>
+                <p><button><a href="https://milaap.org/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h1>Charity<br></h1>
+                <p class="title">All over India</p>
+                <p><button><a href="https://transequality.org/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h1>Essential Commodities<br></h1>
+                <p class="title">Household purpose</p>
+                <p><button><a href="https://www.gogreendrop.com/blog/essential-household-items-you-should-donate/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+{% load static %}
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+<style>
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.sidebar h4{
+  color: white;
+  padding:10px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #2F66ED;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Admin Login</title>
+<style>
+    form{
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    .submit{
+        color:white;
+        background-color:#2F66ED;
+        height: 50px;
+        width:150px;
+    }
+    .cancel{
+        color:white;
+        background-color:#2F66ED;
+        height: 50px;
+        width:120px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 75%;
+    }
+
+    td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+</head>
+<div class="content">
+<h1>Admin Login</h1>
+<br>
+<br>
+{% include 'messages.html' %}
+
+{% block content %} {% endblock content %}
+    <form action="{% url 'adminlogin' %}" method= "POST">
+    {% csrf_token %}
+    <div class="table-responsive" style="width:500px;">
+    <table>
+      <tbody>
+            <tr>
+              <td><label>Username</label></td>
+              <td><input type="text" name="username1" style="width:300px" required></td>
+            </tr>
+            <tr>
+              <td><label>Password</label></td>
+              <td><input type="password" name="password4" style="width:300px" required></td>
+            </tr>
+        </tbody>
+      </table>
+    <br><br>
+    <input type="submit" class="submit" value="Login">
+    <a href="{% url 'home' %}"><button type="button" name="button" class="cancel">Cancel</button></a>
+    </form>
+</div>
